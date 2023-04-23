@@ -15,6 +15,7 @@ import useEstimatedGas from "../hooks/useEstimatedGas";
 import Link from "next/link";
 import { Twitter } from "react-feather";
 import Head from "next/head";
+import NftList from "../components/NftList";
 
 
 // Put Your NFT Drop Contract address from the dashboard here
@@ -36,6 +37,7 @@ const Home: NextPage = () => {
       return nftDrop.prepare("mintTo", [address]);
     } catch (e) {
       // there is sometimes an error if signer is not prepared
+      return undefined;
     }
   }, [nftDrop, address, signer]);
 
@@ -136,6 +138,9 @@ const Home: NextPage = () => {
             </>
           )}
         </div>
+        {nftDrop && totalCount && (
+          <NftList contract={nftDrop} totalCount={totalCount} />
+        )}
         {/* Powered by Pawthereum and Thirdweb */}{" "}
         <div style={{ marginTop: "2rem", marginBottom: "8rem", fontSize: "0.85rem" }}>
           <Link style={{ color: "inherit" }} href="https://pawthereum.com">
