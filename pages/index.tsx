@@ -56,7 +56,7 @@ const Home: NextPage = () => {
         <meta name="twitter:creator" content="@pawthereum"></meta>
         <meta name="twitter:title" content="Mint your Pawther Rank NFT for Free"></meta>
         <meta name="twitter:description" content="Pawther ranks are based on how much Pawthereum you hold. Start off as a Stray Cat and work your way up to Lion! As your $PAWTH balance grows, your NFT automatically updates to showcase your current rank!"></meta>
-        <meta name="twitter:image" content={ownedNfts?.[0]?.metadata?.image || "https://ipfs.thirdwebcdn.com/ipfs/QmdKPZvTNuZvuDt7ojc5QnRSDAQgyAK5p7J9HR3VJR1F1x/logo-notext-trsp-1.png"}></meta>
+        <meta name="twitter:image" content={ownedNfts?.[0]?.metadata?.image || "https://cdn.discordapp.com/attachments/891351589162483732/931878322676322304/finfinfin.png"}></meta>
       </Head>
       <div className={styles.container}>
         <div className={styles.mintInfoContainer}>
