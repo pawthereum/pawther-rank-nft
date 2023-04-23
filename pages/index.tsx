@@ -137,7 +137,7 @@ const Home: NextPage = () => {
           )}
         </div>
         {/* Powered by Pawthereum and Thirdweb */}{" "}
-        <div style={{ marginTop: "2rem", fontSize: "0.85rem" }}>
+        <div style={{ marginTop: "2rem", marginBottom: "8rem", fontSize: "0.85rem" }}>
           <Link style={{ color: "inherit" }} href="https://pawthereum.com">
             Learn more about Pawthereum
           </Link>
